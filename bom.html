@@ -10,12 +10,12 @@
 
 		<!-- Latest compiled JavaScript -->
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		
+
 		<link rel="stylesheet" type="text/css" href="bom.css">
 	</head>
 
 	<body>
-		<h2>Online Bom</h2>
+		<h1>Online Bom</h1>
 
 		<section class="table">
 			<div class="tableHeader">
@@ -54,6 +54,10 @@
 				<div class="tableCell">
 					Total Cost
 				</div>
+				<div class="tableCell">
+					<button type="button" class="btn btn-warning">Delete</button>
+					<button type="button" class="btn btn-success">Edit</button>
+				</div>
 			</div>
 		</section>
 
@@ -62,10 +66,10 @@
 			Description<input type="text" name="descriptionField">
 			Cost<input type="number" name="costField">
 			Quantity<input type="number" name="quantityField">
-			Total Cost<input type="number" name="totalCost" uneditable>
+			Total Cost<input type="number" name="totalCost" disabled>
 			<section class="buttons">
-				<button>Submit</button>
-				<button>Delete</button>
+				<button type="button" class="btn btn-default">Clear</button>
+				<button type="button" class="btn btn-primary">Submit</button>
 			</section>
 		</form>
 
