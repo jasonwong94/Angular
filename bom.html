@@ -2,18 +2,72 @@
 <html>
 	<head>
 		<title>Online BOM</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="bom.css">
 	</head>
 
 	<body>
-		<section>
+		<h2>Online Bom</h2>
+
+		<section class="table">
+			<div class="tableHeader">
+				<!-- Will implement controller at a later stage -->
+				<div class="headerTitle">
+					Product
+				</div>
+				<div class="headerTitle">
+					Description
+				</div>
+				<div class="headerTitle">
+					Cost
+				</div>
+				<div class="headerTitle">
+					Quantity
+				</div>
+				<div class="headerTitle">
+					Total Cost
+				</div>
+			</div>
+
+			<div class="tableBody">
+				<!-- Will implement controller at a later stage -->
+				<div class="tableCell">
+					Product
+				</div>
+				<div class="tableCell">
+					Description
+				</div>
+				<div class="tableCell">
+					Cost
+				</div>
+				<div class="tableCell">
+					Quantity
+				</div>
+				<div class="tableCell">
+					Total Cost
+				</div>
+			</div>
+		</section>
+
 		<form name="addProduct">
 			Product<input type="text" name="productField">
 			Description<input type="text" name="descriptionField">
 			Cost<input type="number" name="costField">
 			Quantity<input type="number" name="quantityField">
-			Total Cost<input type="number" name="totalCost">
+			Total Cost<input type="number" name="totalCost" uneditable>
+			<section class="buttons">
+				<button>Submit</button>
+				<button>Delete</button>
+			</section>
 		</form>
-		</section>
 
 	</body>
 
