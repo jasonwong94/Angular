@@ -17,14 +17,22 @@
 	<body>
 		<h1>Online Bom</h1>
 
+		<nav>
+			<!-- Centered Pills -->
+			<ul class="nav nav-pills">
+				<li class="active"><a href="#">BOM</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</nav>
+
 		<section class="table">
-			<div class="tableHeader">
+			<header class="tableHeader">
 				<!-- Will implement controller at a later stage -->
 				<div class="headerTitle">
-					Product
+					<h2>Product</h2>
 				</div>
 				<div class="headerTitle">
-					Description
+					<h2>Description</h2>
 				</div>
 				<div class="headerTitle">
 					Cost
@@ -35,9 +43,9 @@
 				<div class="headerTitle">
 					Total Cost
 				</div>
-			</div>
+			</header>
 
-			<div class="tableBody">
+			<article class="tableBody">
 				<!-- Will implement controller at a later stage -->
 				<div class="tableCell">
 					Product
@@ -58,7 +66,21 @@
 					<button type="button" class="btn btn-warning">Delete</button>
 					<button type="button" class="btn btn-success">Edit</button>
 				</div>
-			</div>
+			</article>
+
+			<footer class="tableFooter">
+				<div class="tableCell">
+					<div class="progress">
+					  	<div class="progress-bar" role="progressbar" aria-valuenow="70"
+					  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+					    <span>70% Used</span>
+					  	</div>
+					</div>
+				</div>
+				<div class="tableCell">
+					<h3>Total Cost: </h3>
+				</div>
+			</footer>
 		</section>
 
 		<form name="addProduct">
