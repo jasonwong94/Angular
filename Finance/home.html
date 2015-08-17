@@ -1,0 +1,33 @@
+<HTML ng-app="bomApp">
+	<head>
+		<title>Online BOM</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+		<script src="./finance-controller.js"></script>
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="finance.css">
+	</head>
+	<body ng-controller="financeController as finance">
+		<h1 >Online Bom</h1>
+		<aside>
+			Help organize your expenses. Whether it is for daily or project purposes, this application is simply meant to help you. To use it, change your settings and fill out the table. 
+		</aside>
+		<nav>
+			<!-- Centered Pills -->
+			<ul class="nav nav-pills">
+				<li><a href="#">BOM</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</nav>
+		<hr></hr>
+		<bom-view></bom-view>
+		<hr></hr>
+		<settings-view></settings-view>
+	</body>
+</HTML>
