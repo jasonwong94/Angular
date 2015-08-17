@@ -1,0 +1,27 @@
+{
+  "name": "bompackage",
+  "version": "1.0.0",
+  "description": "npm package for web-based bom using angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildBOM": "browserify ./Finance/BOM/*.js -o ./Finance/BOM/bom.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonwong94/Angular.git"
+  },
+  "keywords": [
+    "bom",
+    "angularjs"
+  ],
+  "author": "jasonwong94",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonwong94/Angular/issues"
+  },
+  "homepage": "https://github.com/jasonwong94/Angular#readme",
+  "devDependencies": {
+    "browserify": "^11.0.1"
+  }
+}
