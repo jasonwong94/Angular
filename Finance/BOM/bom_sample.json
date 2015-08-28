@@ -1,43 +1,45 @@
-{
-	'Categories': {
+{'Categories': {
 		'Outer structure' : {
 			'CategoryId' : 10,
 			'Cost' : 1575.00,
-			'Budget': 2000.00
+			'Budget': 2000.00,
+			'Color': '#ff0000'
 		},
 
 		'Electronics' : {
 			'CategoryId' : 11,
 			'Cost' : 3000.00,
-			'Budget': 500.00
+			'Budget': 500.00,
+			'Color': '#ffff00'
 		}
+
 	},
-	'Costs': {
+	'Costs': [
 		{
-			'Product' : 'LEDs'
-			'Description' : 'LEDs to make the traffic lights'
+			'Product' : 'LEDs',
+			'Description' : 'LEDs to make the traffic lights',
 			'Quantity': 50,
 			'Cost': 0.5,
 			'CategoryId': 1,
-			'TotalCosts': null,
+			'TotalCost': null,
 			'Link': null,
 			'Comments': null
 		},
 
 		{
-			'Product' : '680 Resistors'
-			'Description' : 'Resistors for the traffic lights'
+			'Product' : '680 Resistors',
+			'Description' : 'Resistors for the traffic lights',
 			'Quantity': 20,
 			'Cost': 0.75,
 			'CategoryId': 1,
-			'TotalCosts': null,
+			'TotalCost': null,
 			'Link': null,
 			'Comments': null
 		},
 
 		{
-			'Product' : '555 IC'
-			'Description' : 'Chip to create the traffic light timer'
+			'Product' : '555 IC',
+			'Description' : 'Chip to create the traffic light timer',
 			'Quantity': 10,
 			'Cost': 0.1,
 			'CategoryId': 1,
@@ -47,8 +49,8 @@
 
 		},
 		{
-			'Product' : '2 x 4 lumber'
-			'Description' : 'Lumber to help create the traffic light structure '
+			'Product' : '2 x 4 lumber',
+			'Description' : 'Lumber to help create the traffic light structure ',
 			'Quantity': 20,
 			'Cost': 0.1,
 			'CategoryId': 2,
@@ -58,8 +60,8 @@
 
 		},
 		{
-			'Product' : 'Plywood'
-			'Description' : ' Traffic light panel '
+			'Product' : 'Plywood',
+			'Description' : ' Traffic light panel ',
 			'Quantity': 20,
 			'Cost': 0.1,
 			'CategoryId': 2,
@@ -68,9 +70,4 @@
 			'Comments': null
 
 		}
-
-	}
-
-	'TotalCosts' :
-
-}
+};
